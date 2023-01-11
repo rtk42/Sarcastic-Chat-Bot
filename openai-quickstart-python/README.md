@@ -11,7 +11,7 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-python
+   $ cd /Sarcastic-Chat-Bot/openai-quickstart-python
    ```
 
 4. Create a new virtual environment
@@ -27,15 +27,13 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ pip install -r requirements.txt
    ```
 
-6. Make a copy of the example environment variables file
+6. Add api tocken 
 
    ```bash
-   $ cp .env.example .env
+   $ OPENAI_API_KEY=
    ```
 
-7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
-
-8. Run the app
+7. Run the app
 
    ```bash
    $ flask run
