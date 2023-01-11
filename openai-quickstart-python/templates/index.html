@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Simple Sarcastic Chat Bot</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='src.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='src.png') }}" class="icon" />
+  <h3>Sarcastic Chat Bot</h3>
+  <form action="/" method="post">
+    <input type="text" name="userInput" placeholder="Ask Me Something Not Dumb" required />
+    <input type="submit" value="Here is my Answer" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
